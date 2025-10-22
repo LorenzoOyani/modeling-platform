@@ -7,7 +7,7 @@ Base = declarative_base()
 
 
 class UploadFile(Base):
-    __tablename__ = 'uploaded files'
+    __tablename__ = 'uploaded_files'
     id = Column(String, primary_key=True, default=lambda: str(uuid.uuid4()))
     filename = Column(String, nullable=False)
     filePath = Column(String, nullable=False, unique=True)

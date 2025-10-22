@@ -117,3 +117,17 @@ class FileHandler:
         except Exception as e:
             print(f"Error previewing file: {e}")
             return None
+
+
+    @staticmethod
+    def delete_file(self, filepath):
+        """Delete file from disk"""
+        try:
+            if os.path.exists(filepath):
+                os.remove(filepath)
+                return True
+            return False
+        except Exception as e:
+            print(f"Error deleting file: {e}")
+            return False
+

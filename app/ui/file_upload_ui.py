@@ -2,6 +2,7 @@ import streamlit as st
 from app.core.file_service import FileService
 from app.core.file_handler import FileHandler, ALLOWED_EXTENSIONS
 from app.db import init_db
+import os
 
 st.set_page_config(page_title=" Modeling Platform - Upload", layout="centered")
 
